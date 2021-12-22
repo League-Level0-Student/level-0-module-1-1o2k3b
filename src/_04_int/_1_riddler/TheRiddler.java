@@ -20,24 +20,28 @@ String answer = "a human";
 if(answer.equals (riddle)) {
 	score += 1;
 	JOptionPane.showMessageDialog(null, "you passed the sphinx, so now you have to steal the ring from the gollum");
-	else
-		score -= 1;
+}
+	else {
+		score-=999;
 		JOptionPane.showMessageDialog(null, "you never find the gollum because you solved the riddle incorrectly and the sphinx killed you");
-		}
+	}
 		// 5. Otherwise, say "wrong" and tell them the answer
 
 		// 6. Add some more riddles
 JOptionPane.showInputDialog("the next, second and final riddle is: what is in my pocket");
 String answer2 = "a ring";
-if (answer.equals (answer2));
-JOptionPane.showMessageDialog("you got the master ring from gollum and now you have to destroy it at the cracks of doom without getting killed by sauron the dark lord");
-score+=2;
-else
-	score-=999;
-JOptionPane.showMessageDialog(null, "you we're killed by the gollum.");
+if (answer.equals (answer2)) {
+	JOptionPane.showMessageDialog(null, "you got the master ring from gollum and now you have to destroy it at the cracks of doom without getting killed by sauron the dark lord");
+	score+=999;	
+}
+else {
+	score-=999;	
+	JOptionPane.showMessageDialog(null, "you we're killed by the gollum.");
+}
+
 
 		// 2. Make a pop up to show the score.
-		
+JOptionPane.showMessageDialog(null, score);
 	}
 }
 
