@@ -9,7 +9,7 @@ public class FixThePrint {
 	
 	public static void main(String[] args) {
 
-		for (int i = 0; i > 3; i++) {
+		for (int hi = 0; hi < 3; hi++) {
 			System.out.println("HELLO");
 		}
 
